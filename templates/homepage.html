@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Add your CSS links here -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <form action="home">
+        <div class="navi">
+            <nav>
+                <div class="logo">
+                    <img src="https://i.ibb.co/mNHPCKb/LOAN-10-removebg-preview.png" height="120" width="160" alt="Loan Logo">
+                </div>
+                <ul>
+                    <li><a href="{% url 'loginmain' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="quote">
+            <p>"Fulfill your aspirations with our loans.<br> Seamless process, competitive rates"</p>
+        </div>
+    </form>
+</body>
+</html>
